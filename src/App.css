@@ -1,0 +1,150 @@
+/* body {
+  background-color: pink;
+  max-width: 1280px;
+} */
+
+body {
+  background-color: var(--blue);
+  width: 100%;
+}
+
+:root {
+  /* colors */
+  --white: #fff;
+  --blue:  #4324FB;
+  /* --highlight: #ff39ff; */
+  --highlight: magenta;
+  --accent: #E1FD7E;
+  --accent-hover: #ABC355;
+  
+  max-width: 1280px;
+}
+
+#contact {
+  border-bottom: 1px solid white;
+}
+
+#contact:hover {
+  border-bottom: 1px solid var(--highlight);
+}
+
+#copyright {
+  font-size: 12px;
+  font-weight: 400;
+  /* margin: 24px 0; */
+}
+
+.container {
+  background-color: var(--blue);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.toast {
+  /* background-color: rgba(225, 253, 126, 0.8); */
+  /* backdrop-filter: blur(6px); */
+  display: none;
+}
+
+.toast:hover {
+  background-color: var(--accent-hover);
+}
+
+.toast p {
+  color: black;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+.shape {
+  width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px 16px 0;
+
+}
+
+.textContainer__section {
+  border-top: 1px solid var(--white);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 8px;
+
+  width: 100%;
+}
+
+.textContainer__title {
+  flex: 2;
+}
+
+.textContainer__title p {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.textContainer__body {
+  color: var(--white);
+  flex: 4;
+  text-align: left;
+}
+
+
+
+.textContainer__body p, .textContainer__body a {
+  color: var(--white);
+  font-family: "Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 8px 0;
+}
+
+.textContainer__body a:hover {
+  color: var(--highlight);
+}
+
+@media screen and (min-width: 500px) {
+
+  #copyright {
+    font-size: 16px;
+  }
+
+  .textContainer__section {
+    flex-direction: row;
+  }
+
+  .textContainer__body p, .textContainer__body a {
+    color: var(--white);
+    font-size: 20px;
+  }
+
+  .textContainer__title p {
+    font-size: 32px;
+  }
+
+  .toast {
+    background-color: var(--accent);
+    border-radius: 20px;
+    color: black;
+    padding: 8px 16px;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    text-align: center;
+    display: block;
+  }
+}
