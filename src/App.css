@@ -1,15 +1,9 @@
-/* body {
-  background-color: pink;
-  max-width: 1280px;
-} */
-
 body {
   background-color: var(--blue);
   width: 100%;
 }
 
 :root {
-  /* colors */
   --white: #fff;
   --blue:  #4324FB;
   /* --highlight: #ff39ff; */
@@ -31,7 +25,6 @@ body {
 #copyright {
   font-size: 12px;
   font-weight: 400;
-  /* margin: 24px 0; */
 }
 
 .container {
@@ -44,8 +37,6 @@ body {
 }
 
 .toast {
-  /* background-color: rgba(225, 253, 126, 0.8); */
-  /* backdrop-filter: blur(6px); */
   display: none;
 }
 

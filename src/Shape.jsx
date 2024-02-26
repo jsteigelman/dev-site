@@ -28,14 +28,11 @@ const Shape = () => {
     window.addEventListener("resize", handleResize);
 
     const renderer = new THREE.WebGLRenderer();
-
     renderer.setSize(window.innerWidth, height);
     renderer.setPixelRatio(window.devicePixelRatio); // test
-
     mountRef.current.appendChild(renderer.domElement);
 
     const geometry = new THREE.TorusGeometry(2, 1, 30, 200);
-
     const loader = new THREE.TextureLoader();
     const texture = loader.load(customImage);
     const material = new THREE.MeshBasicMaterial({ map: texture });
@@ -48,17 +45,7 @@ const Shape = () => {
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(1, 1); // image repeat
 
-    // const pointLight = new THREE.PointLight(0xffffff, 1);
-    // pointLight.position.set(5, 5, 5);
-    // scene.add(pointLight);
-
-    // texture.minFilter = THREE.LinearMipmapLinearFilter;
-    // texture.magFilter = THREE.LinearFilter;
-    // texture.generateMipmaps = true;
-    // texture.needsUpdate = true; // Ensure the texture is updated with these settings
-
     camera.position.z = 5;
-
     camera.fov = 75; // Adjust FOV to change how much of the scene is visible
     camera.zoom = 1.8; // Adjust zoom to bring the torus closer or farther away
     camera.updateProjectionMatrix(); // Always update the projection matrix after changing camera properties
