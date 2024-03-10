@@ -49,6 +49,17 @@ function App() {
               with a user-friendly interface, to deliver a superior digital
               experience.
             </p>
+            <p>
+              Check out my latest project,{" "}
+              <a
+                href="https://apps.apple.com/us/app/leo-art/id1668017685"
+                target="_blank"
+                id="link"
+              >
+                Leo,
+              </a>{" "}
+              now available for download on The App Store!{" "}
+            </p>
           </div>
         </div>
         <div className="textContainer__section">
@@ -57,8 +68,17 @@ function App() {
           </div>
           <div className="textContainer__body">
             <p>
-              <a id="contact" href="mailto:joey.steigelman@gmail.com">
+              Interested in connecting?{" "}
+              <a id="link" href="mailto:joey.steigelman@gmail.com">
                 Get in touch here.
+              </a>{" "}
+              Or, explore my{" "}
+              <a
+                id="link"
+                href="https://github.com/jsteigelman"
+                target="_blank"
+              >
+                projects on GitHub.
               </a>
             </p>
           </div>

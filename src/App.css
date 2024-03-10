@@ -14,17 +14,17 @@ body {
   max-width: 1280px;
 }
 
-#contact {
-  border-bottom: 1px solid white;
-}
-
-#contact:hover {
-  border-bottom: 1px solid var(--highlight);
-}
-
 #copyright {
   font-size: 12px;
   font-weight: 400;
+}
+
+#link {
+  border-bottom: 1px solid white;
+}
+
+#link:hover {
+  border-bottom: 1px solid var(--highlight);
 }
 
 .container {
@@ -49,7 +49,6 @@ body {
   font-size: 14px;
   margin: 0;
 }
-
 
 .shape {
   width: 100%;
@@ -86,14 +85,11 @@ body {
   margin: 0;
 }
 
-
 .textContainer__body {
   color: var(--white);
   flex: 4;
   text-align: left;
 }
-
-
 
 .textContainer__body p, .textContainer__body a {
   color: var(--white);
